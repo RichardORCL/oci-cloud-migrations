@@ -33,7 +33,9 @@ if (__name__ == '__main__'):
         exit(1)
 
     tenancy_id = os.environ.get('OCI_TENANCY')
-    config = oci.config.from_file()
+    env_config_file = os.environ.get('OCI_CONFIG_FILE')
+    env_config_section = os.environ.get('OCI_CONFIG_PROFILE')
+    config = oci.config.from_file(env_config_file, env_config_section)
     cloud_bridge_client = oci.cloud_bridge.InventoryClient(config)
 
     asset = cloud_bridge_client.get_asset(asset_id=source_asset_id).data
