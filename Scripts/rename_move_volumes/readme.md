@@ -1,4 +1,4 @@
-# OCM Fix Compute
+# OCM Rename and move boot and block volumes
 
 A Python utility for Oracle Cloud Infrastructure (OCI) that finds and fixes boot and block volumes left behind in a migration compartment after instances are launched elsewhere.
 
