@@ -39,8 +39,8 @@ Volumes already in the correct compartment are not renamed or moved.
 
 Easiest way to run this script is from the OCI Cloud Shell:
 ```
-git clone https://github.com/RichardORCL/OCI-OCM-fixstorage.git
-cd OCI-OCM-fixstorage
+git clone https://github.com/oracle-quickstart/oci-cloud-migrations.git
+cd Scripts/rename_move_volumes
 python ocm-fixstorage.py -c [compartmentOCID or (partial) name of compartment]
 ```
 
